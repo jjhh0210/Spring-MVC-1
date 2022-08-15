@@ -78,7 +78,6 @@ public class FrontControllerServletV5 extends HttpServlet {
     }
 
     private MyHandlerAdapter getHandlerAdapter(Object handler) {
-        MyHandlerAdapter adapter = null;
         //list에서 어댑터 하나씩 꺼내서 확인
         for (MyHandlerAdapter a : handlerAdapters) {
             if(a.support(handler)){
